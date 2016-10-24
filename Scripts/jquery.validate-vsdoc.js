@@ -10,7 +10,7 @@
  * Microsoft neither took the code under GPL nor distributes it thereunder but
  * under the terms set out in this paragraph. All notices and licenses
  * below are for informational purposes only.
- *
+ 
  * NUGET: END LICENSE TEXT */
 /*
 * This file has been commented to support Visual Studio Intellisense.
@@ -20,7 +20,6 @@
 *
 * Comment version: 1.11.1
 */
-
 /*
 * Note: While Microsoft is not the author of this file, Microsoft is
 * offering you a license subject to the terms of the Microsoft Software
@@ -34,8 +33,6 @@
 * Copyright (c) 2013 Jörn Zaefferer; Licensed MIT
 *
 */
-
-
 
 (function($) {
 

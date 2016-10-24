@@ -10,6 +10,7 @@
 * Microsoft neither took the code under GPL nor distributes it thereunder but
 * under the terms set out in this paragraph. All notices and licenses
 * below are for informational purposes only.
+
 * NUGET: END LICENSE TEXT */
 /*!
 ** Unobtrusive validation support library for jQuery and jQuery Validate

@@ -1,128 +1,14 @@
-﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+﻿
+<!DOCTYPE html>
+
+<html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="haberportalı" content="width=device-width, initial-scale=1.0" />
-    <title> Haber Portalı-Yönetim Sayfası </title>
-    <!-- BOOTSTRAP STYLES-->
-    <link href="~/Content/bootstrap.css" rel="stylesheet" />
-    <!-- FONTAWESOME STYLES-->
-    <link href="~/Content/font-awesome.css" rel="stylesheet" />
-    <!-- MORRIS CHART STYLES-->
-    <link href="~/Scripts/morris/morris-0.4.3.min.css" rel="stylesheet" />
-    <!-- CUSTOM STYLES-->
-    <link href="~/Content/custom.css" rel="stylesheet" />
-    <!-- GOOGLE FONTS-->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
 </head>
 <body>
-    <div id="wrapper">
-        @Html.Partial("_Header")
-        <!-- /. NAV TOP  -->
-        @Html.Partial("_Sidebar")
-        <!-- /. NAV SIDE  -->
-        <div id="page-wrapper">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Yönetim Sayfası - Hoşgeldiniz</h2>              
-                </div>
-            </div>
-            <!-- /. ROW  -->
-            <hr />
-            <div class="row">
-                
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <div class="panel panel-primary text-center no-boder ">
-                        <a href="@Url.Action("Index", "Haber")">
-                            <div class="panel-body">
-                                <i class="fa fa-table fa-5x"></i>
-                                <h3>Haber Listele </h3>
-                            </div>
-                        </a>
-                        <div class="panel-footer back-footer-green">
-                            Haberleri listeleyebilirsiniz.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6 col-xs-6">
-
-                    <div class="panel panel-primary text-center no-boder bg-color-green">
-                        <a href="@Url.Action("Ekle", "Haber")">
-                            <div class="panel-body">
-                                <i class="fa fa-edit fa-5x"></i>
-                                <h3>Haber Ekle</h3>
-                            </div>
-                        </a>
-                        <div class="panel-footer back-footer-green">
-                            Haber ekleyebilirisniz.
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <div class="panel panel-primary text-center no-boder ">
-                        <a href="@Url.Action("Index", "Kategori")">
-                            <div class="panel-body">
-                                <i class="fa fa-table fa-5x"></i>
-                                <h3>Kategori Listele </h3>
-                            </div>
-                        </a>
-                        <div class="panel-footer back-footer-green">
-                            Kategorileri listeleyebiliriniz.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6 col-xs-6">
-
-                    <div class="panel panel-primary text-center no-boder bg-color-green">
-                        <a href="@Url.Action("Ekle", "Kategori")">
-                            <div class="panel-body">
-                                <i class="fa fa-edit fa-5x"></i>
-                                <h3> Kategori Ekle</h3>
-                            </div>
-                        </a>
-                        <div class="panel-footer back-footer-green">
-                           Kategori ekleyebilirsiniz.
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <!-- /. ROW  -->
-            <hr />
-            
-
-            @RenderBody()
-            <!-- /. PAGE INNER -->
-        </div>
-        <!-- /. PAGE WRAPPER  -->
+    <div>
+        @RenderBody()
     </div>
-    <!-- /. WRAPPER  -->
-    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
-    <!-- JQUERY SCRIPTS -->
-    <script src="~/Scripts/jquery-1.10.2.js"></script>
-
-    <!-- BOOTSTRAP SCRIPTS -->
-    <script src="~/Scripts/bootstrap.min.js"></script>
-    <!-- METISMENU SCRIPTS -->
-    <script src="~/Scripts/jquery.metisMenu.js"></script>
-    <!-- MORRIS CHART SCRIPTS -->
-    <script src="~/Scripts/morris/raphael-2.1.0.min.js"></script>
-    <script src="~/Scripts/morris/morris.js"></script>
-    <!-- CUSTOM SCRIPTS -->
-<script src="~/Scripts/custom.js"></script>
-
-
-   
-    <!-- Site -->
-    <script src="~/Scripts/main.js"></script>
-
-    <script src="~/Scripts/Global.js"></script>
-    <script src="~/Scripts/bootbox.min.js"></script>
-    <script src="~/Scripts/notify.js"></script>
-
 </body>
 </html>
