@@ -1,0 +1,43 @@
+﻿<nav class="navbar-default navbar-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav" id="main-menu">
+            <li class="text-center">
+                <img src="~/img/find_user.png" class="user-image img-responsive" />
+            </li>
+
+
+            <li>
+                <a class="active-menu" href="@Url.Action("Index","Home")"><i class="fa fa-dashboard fa-3x"></i> Ana Sayfa</a>
+            </li>
+
+            <li>
+                <a href="#"><i class="fa fa-sitemap fa-3x"></i>Kategori Yönetimi<span class="arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li><a href="@Url.Action("Ekle","Kategori")">Kategori Ekle</a></li>
+                    <li><a href="@Url.Action("Index","Kategori")">Kategori Listele</a></li>
+
+                </ul>
+            </li>
+
+            <li>
+                <a href="#"><i class="fa fa-edit fa-3x"></i>Haber Yönetimi<span class="arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li><a href="@Url.Action("Ekle","Haber")">Haber Ekle</a></li>
+                    <li><a href="@Url.Action("Index","Haber")">Haber Listele</a></li>
+
+                </ul>
+            </li>
+            
+            @*<li>
+                <a class="active-menu" href="@Url.Action("Index","Home")"><i class="fa fa-support fa-3x"></i>Üyelik</a>
+            </li>*@
+
+            <li>
+                <a href="@Url.Action("LogOut","Account")"><i class="fa fa-close fa-3x"></i> Çıkış</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</nav>
